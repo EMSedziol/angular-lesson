@@ -1,0 +1,10 @@
+<div class="componentdiv">
+
+  <p *ngIf='todayIsTuesday'> Today is Tuesday</p>  <!-- the variable 'todayIsTuesday' is set in letter.component.ts -->
+   
+  <p *ngIf='!todayIsTuesday'> Today is Not Tuesday</p>
+
+  <p><label>The text is: {{ textForAdmin }}</label></p>
+  <button (click)='buttonClick()' *ngIf='isAdmin'>Button for Admins only!</button>
+
+</div>
