@@ -7,6 +7,10 @@ import { PlaygroundComponent } from './playground/playground.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent} from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { VendorComponent } from './vendor/vendor.component';
+import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
+import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -14,6 +18,10 @@ const routes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'userlist', component: UserListComponent },
   { path: 'user/detail/:id', component: UserDetailComponent },
+  { path: 'vendor', component: VendorComponent },
+  { path: 'vendorlist', component: VendorListComponent },
+  { path: 'product', component: ProductComponent },
+  { path: 'productlist', component: ProductListComponent},
   { path: 'letter', component: LetterComponent },
   { path: 'playground', component: PlaygroundComponent },
   { path: 'about', component: AboutComponent },

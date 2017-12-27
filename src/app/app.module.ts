@@ -15,6 +15,12 @@ import { UserComponent } from './user/user.component';
 import { UserService } from './user/user.service';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { VendorComponent } from './vendor/vendor.component';
+import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
+import { VendorService } from './vendor/vendor.service';
+import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductService } from './product/product.service';
 
 
 @NgModule({
@@ -27,7 +33,11 @@ import { UserDetailComponent } from './user/user-detail/user-detail.component';
     PlaygroundComponent,
     UserComponent,
     UserListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    VendorComponent,
+    VendorListComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,7 @@ import { UserDetailComponent } from './user/user-detail/user-detail.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [UserService],
+  providers: [UserService, ProductService, VendorService],
   bootstrap: [AppComponent]  // this is what Angular runs at startup
 })
 export class AppModule { }

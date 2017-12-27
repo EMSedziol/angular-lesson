@@ -1,7 +1,23 @@
-<p *ngIf='user'>
-    {{ user.UserName }}
-    {{ user.LastName }}
-</p>
+<div class="user container" *ngIf='user'>
+        <P>
+            <label class="col-sm-2">User Name</label>
+            <input [(ngModel)]= user.UserName type="text"> 
+        </P>
 
-
-<p> did user name display</p>
+        <P>
+            <label class="col-sm-2">First Name</label>
+            <input [(ngModel)]= user.FirstName type="text"> 
+        </P>
+        <P>
+            <label class="col-sm-2">Last Name</label>
+            <input [(ngModel)]= user.LastName type="text"> 
+        </P>
+        <P>
+            <label class="col-sm-2">Phone</label>
+            <input [(ngModel)]= user.Phone type="text"> 
+        </P>
+        <P>
+            <label class="col-sm-2">Email</label>
+            <input [(ngModel)]= user.Email type="text"> 
+        </P>
+</div>

@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.user = new User('1', 'ems', 'ems122', 'Emilie',
-    'Sedziol', '513-213-2413', 'ems1234@fuse.net',
+    'Sedziol', '513-213-2413', 'ems1234@fuse.bbb',
     'true', 'true');
   }
 

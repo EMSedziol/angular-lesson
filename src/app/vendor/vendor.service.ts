@@ -3,26 +3,26 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 
-import { User } from './user';
+import { Vendor } from './vendor';
 
 const urlBase = 'http://localhost:8080/';
-const mvcCtrl = 'User/';
+const mvcCtrl = 'Vendor/';
 const url: string = urlBase + mvcCtrl;
 
 @Injectable()
-export class UserService {
+export class VendorService {
 
-  list(): Promise<User[]> {
+  list(): Promise<Vendor[]> {
     return this.http.get(url + 'List')
       .toPromise()
-      .then(resp => resp.json() as User[])
+      .then(resp => resp.json() as Vendor[])
       .catch(this.handleError);
   }
 
-  get(id): Promise<User[]> {
+  get(id): Promise<Vendor[]> {
     return this.http.get(url + 'Get?id=' + id)
     .toPromise()
-    .then (resp => resp.json() as User[])
+    .then (resp => resp.json() as Vendor[])
     .catch(this.handleError);
   }
 
