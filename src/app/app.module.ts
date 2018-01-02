@@ -21,6 +21,7 @@ import { VendorService } from './vendor/vendor.service';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductService } from './product/product.service';
+import { UploadComponent } from './upload/upload.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ProductService } from './product/product.service';
     VendorComponent,
     VendorListComponent,
     ProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,9 @@ import { ProductService } from './product/product.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [UserService, ProductService, VendorService],
+  providers: [UserService, 
+    ProductService,
+    VendorService],
   bootstrap: [AppComponent]  // this is what Angular runs at startup
 })
 export class AppModule { }

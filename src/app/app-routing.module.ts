@@ -11,6 +11,7 @@ import { VendorComponent } from './vendor/vendor.component';
 import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
+import { UploadComponent } from './upload/upload.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -22,9 +23,7 @@ const routes: Routes = [
   { path: 'vendorlist', component: VendorListComponent },
   { path: 'product', component: ProductComponent },
   { path: 'productlist', component: ProductListComponent},
-  { path: 'letter', component: LetterComponent },
-  { path: 'playground', component: PlaygroundComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'upload', component: UploadComponent},
   { path: '**', component: HomeComponent }
 
 ]; // http://localhost:4200/user/detail/1
